@@ -9,6 +9,12 @@ import { Poppins } from "next/font/google";
 
 const poppins = Poppins({ subsets: ["latin"], weight: "700" });
 
+const textVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  hover: { scale: 1.05, transition: { duration: 0.3 } },
+};
+
 export default function Home() {
   const [showIntro, setShowIntro] = useState<null | boolean>(null);
   const [isMounted, setIsMounted] = useState(false);
@@ -50,20 +56,32 @@ export default function Home() {
 
         {/* Modern Hero Section */}
         <section className="bg-black text-white py-20 text-center relative z-10 px-4">
-          <h1
+          <motion.h1
             className={`${poppins.className} text-5xl md:text-6xl font-extrabold mb-6 leading-tight max-w-4xl mx-auto`}
             style={{
               textShadow: "0 2px 8px rgba(255, 255, 255, 0.15)",
               letterSpacing: "0.05em",
             }}
+            variants={textVariants}
+            initial="hidden"
+            animate="visible"
+            whileHover="hover"
           >
             Hayalindeki arabayı
             <br />
-            <span className="text-white/80">güvenle keşfet</span>
-          </h1>
-          <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto mb-10 drop-shadow-sm">
+            <motion.span className="text-white/80" variants={textVariants} initial="hidden" animate="visible" whileHover="hover">
+              güvenle keşfet
+            </motion.span>
+          </motion.h1>
+          <motion.p
+            className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto mb-10 drop-shadow-sm"
+            variants={textVariants}
+            initial="hidden"
+            animate="visible"
+            whileHover="hover"
+          >
             En iyi performanslı ve lüks araçlarla, hayallerini gerçeğe dönüştür.
-          </p>
+          </motion.p>
           <Button
             variant="default"
             className="bg-white text-black font-semibold px-14 py-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl"
