@@ -14,7 +14,13 @@ const cars = [
     desc: "2004 Model, 450 HP",
     price: "₺4.500.000",
     slug: "bmw-320",
-    images: ["/bmw1.jpg", "/bmw2.jpg", "/bmw3.jpg", "/bmw4.jpg", "/bmw5.jpg"],
+    images: [
+      "/bmw/bmw1.jpg", 
+      "/bmw/bmw2.jpg", 
+      "/bmw/bmw3.jpg", 
+      "/bmw/bmw4.jpg", 
+      "/bmw/bmw5.jpg"
+    ],
     details: "Boyasız değişensiz 2004 model 350 bin km tramer yok otomatik vites N47 motor swap."
   },
   { 
