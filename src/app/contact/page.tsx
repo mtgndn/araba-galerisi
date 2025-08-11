@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -28,12 +26,8 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen">
-      <Navbar />
-
-      <main className="flex-grow max-w-xl w-full mx-auto p-6">
-        <h1 className="text-3xl font-bold mb-6 text-center">İletişim</h1>
-
+    <div className="flex items-center justify-center min-h-screen bg-gray-50 p-6">
+      <main className="max-w-xl w-full bg-white p-8 rounded-lg shadow-lg">
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label htmlFor="name" className="block mb-1 font-medium">
@@ -92,8 +86,6 @@ export default function ContactPage() {
           <p className="mt-4 text-green-600 font-medium text-center">{responseMessage}</p>
         )}
       </main>
-
-      <Footer />
     </div>
   );
 }
