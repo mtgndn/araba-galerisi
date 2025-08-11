@@ -10,12 +10,12 @@ import {
 
 const cars = [
   { 
-    name: "BMW M4",
-    desc: "2023 Model, 450 HP",
+    name: "BMW 320i",
+    desc: "1999 Model, 450 HP",
     price: "₺4.500.000",
-    slug: "bmw-m4",
-    images: ["/bmw1.jpg", "/bmw2.jpg", "/bmw3.jpg"],
-    details: "BMW M4, 450 beygir gücünde, çift turbo motor ve lüks iç tasarımıyla piste ve yola hazır."
+    slug: "bmw-320",
+    images: ["/bmw1.jpg", "/bmw2.jpg", "/bmw3.jpg", "/bmw4.jpg", "/bmw5.jpg"],
+    details: "Boyasız değişensiz 2004 model 350 bin km tramer yok otomatik vites N47 motor swap."
   },
   { 
     name: "Audi RS7",

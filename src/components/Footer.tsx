@@ -42,13 +42,14 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-3">📍 Konum</h3>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24191.037103580655!2d29.0110193!3d41.0448548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7700b9d0303%3A0x1b469769a0c1a3f8!2sMaslak%2C%20Sar%C4%B1yer%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1696955225000!5m2!1str!2str"
-            width="100%"
-            height="180"
-            style={{ border: 0 }}
-            allowFullScreen={true}
-            loading="lazy"
-          ></iframe>
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127646.89105882353!2d34.49331386785795!3d36.80087733802785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d46eef14036aaf%3A0x20a060f2026dbda3!2sMersin%2C%20Turkey!5e0!3m2!1str!2str!4v1691736421739!5m2!1str!2str"
+  width="100%"
+  height="100%"
+  style={{ border: 0 }}
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+/>
+
         </div>
       </div>
 
