@@ -33,7 +33,7 @@ export default function Home() {
   }
 
   const cars = [
-    { image: "/bmw.jpg", name: "BMW 320i", desc: "1999 Model, 450 HP", price: "₺4.500.000", slug: "bmw-320" },
+    { image: "/bmw.jpg", name: "BMW 320i", desc: "2004 Model, 450 HP", price: "₺4.500.000", slug: "bmw-320" },
     { image: "/audi.jpg", name: "Audi RS7", desc: "2023 Model, 600 HP", price: "₺6.200.000", slug: "audi-rs7" },
     { image: "/mercedes.jpg", name: "Mercedes AMG GT", desc: "2022 Model, 530 HP", price: "₺5.800.000", slug: "mercedes-amg-gt" },
   ];

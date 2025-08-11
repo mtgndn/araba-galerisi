@@ -11,7 +11,7 @@ import {
 const cars = [
   { 
     name: "BMW 320i",
-    desc: "1999 Model, 450 HP",
+    desc: "2004 Model, 450 HP",
     price: "₺4.500.000",
     slug: "bmw-320",
     images: ["/bmw1.jpg", "/bmw2.jpg", "/bmw3.jpg", "/bmw4.jpg", "/bmw5.jpg"],

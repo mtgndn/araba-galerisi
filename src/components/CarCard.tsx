@@ -1,11 +1,11 @@
-import Link from "next/link"
+import Link from "next/link";
 
 interface CarProps {
-  image: string
-  name: string
-  desc: string
-  price: string
-  slug: string
+  image: string;
+  name: string;
+  desc: string;
+  price: string;
+  slug: string;
 }
 
 export default function CarCard({ image, name, desc, price, slug }: CarProps) {
@@ -20,5 +20,5 @@ export default function CarCard({ image, name, desc, price, slug }: CarProps) {
         </div>
       </div>
     </Link>
-  )
+  );
 }
